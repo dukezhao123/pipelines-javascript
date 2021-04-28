@@ -20,6 +20,9 @@ steps:
     command: 'install'
     workingDir: 'sdfh'
     verbose: true
+  displayName: 'test npm install'
+  condition: ne(variables['CacheRestored'], 'true')
+  
 - script: |
     npm install
     npm run build
