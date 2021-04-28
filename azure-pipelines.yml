@@ -19,7 +19,7 @@ steps:
   inputs:
     command: 'install'
     workingDir: ''
-    verbose: true
+    verbose: false
   displayName: 'test npm install'
   condition: ne(variables['CacheRestored'], 'true')
 
