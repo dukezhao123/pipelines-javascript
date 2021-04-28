@@ -18,7 +18,7 @@ steps:
 - task: Npm@1
   inputs:
     command: 'install'
-    workingDir: 'sdfh'
+    workingDir: ''
     verbose: true
   displayName: 'test npm install'
   condition: ne(variables['CacheRestored'], 'true')
